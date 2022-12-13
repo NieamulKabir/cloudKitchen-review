@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { FaUser } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 import { AuthContext } from '../../../context/AuthProvider';
-
+import { TbToolsKitchen2 } from "react-icons/tb";
 
 let activeStyle = {
     textDecoration: "underline",
@@ -29,7 +29,7 @@ const Header = () => {
                     <div className="flex-1 md:pl-5 ">
                         <Link to="/">
                             <div className="relative top-[]">
-                                <p className='font-mono font-extrabold text-base text-violet-600  md:text-2xl flex justify-center items-center'>Faria's Kitchen</p>
+                                <p className='font-mono font-extrabold text-base text-violet-600  md:text-2xl flex justify-center items-center'><TbToolsKitchen2 className='text-3xl'></TbToolsKitchen2> Nieamul's Kitchen</p>
                             </div>
                         </Link>
                     </div>
@@ -53,7 +53,7 @@ const Header = () => {
                                         isActive ? activeStyle : undefined
                                     }
                                 >
-                                    <button className="py-3">FOOD_SERVICE</button>
+                                    <button className="py-3">FOOD_ITEM</button>
                                 </NavLink>
                             </h1>
 
@@ -82,7 +82,7 @@ const Header = () => {
                                         isActive ? activeStyle : undefined
                                     }
                                 >
-                                    <button className="py-3">ADD-SERVICE</button>
+                                    <button className="py-3">ADD-ITEM</button>
                                 </NavLink>
                             </h1>
 
@@ -163,12 +163,12 @@ const Header = () => {
                             </li>
                             <li className="">
                                 <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/service">
-                                    COURSES
+                                    FOODITEM
                                 </Link>
                             </li>
                             <li className="">
                                 <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/blog">
-                                    Blog
+                                    BLOG
                                 </Link>
                             </li>
 
@@ -181,7 +181,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/addservice">
-                                    AddService
+                                    AddItem
                                 </Link>
                             </li>
 
