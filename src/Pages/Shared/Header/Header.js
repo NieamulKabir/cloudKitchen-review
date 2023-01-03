@@ -67,22 +67,16 @@ const Header = () => {
                                     <button className="py-3">BLOG</button>
                                 </NavLink>
                             </h1>
+
+
+
                             <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn">
-                                <NavLink to="/myreviews"
+                                <NavLink to="/dashboard"
                                     style={({ isActive }) =>
                                         isActive ? activeStyle : undefined
                                     }
                                 >
-                                    <button className="py-3">MY-REVIEWS</button>
-                                </NavLink>
-                            </h1>
-                            <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn">
-                                <NavLink to="/addservice"
-                                    style={({ isActive }) =>
-                                        isActive ? activeStyle : undefined
-                                    }
-                                >
-                                    <button className="py-3">ADD-ITEM</button>
+                                    <button className="py-3">DASHBOARD</button>
                                 </NavLink>
                             </h1>
 

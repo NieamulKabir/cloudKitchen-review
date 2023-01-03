@@ -12,6 +12,8 @@ import MyReviews from './Pages/MyReviews/MyReviews';
 import AddService from './Pages/AddService/AddService';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute'
 import NotFound from './Pages/NotFound/NotFound'
+import DashBoardLayout from './Layout/DashBoardLayout';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
 
 function App() {
   const router = createBrowserRouter([
@@ -45,10 +47,6 @@ function App() {
           element: <PrivateRoute> <MyReviews></MyReviews></PrivateRoute>
         },
         {
-          path: '/addservice',
-          element: <PrivateRoute><AddService></AddService></PrivateRoute>
-        },
-        {
           path: '/login',
           element: <Login></Login>
         },
@@ -60,6 +58,24 @@ function App() {
           path: '/*',
           element: <NotFound></NotFound>
         }
+      ]
+    },
+    {
+      path: '/dashboard',
+      element: <PrivateRoute><DashBoardLayout></DashBoardLayout></PrivateRoute>,
+      children: [
+        {
+          path: '/dashboard',
+          element: <Dashboard></Dashboard>
+        },
+        {
+          path: '/dashboard/myreviews',
+          element: <PrivateRoute> <MyReviews></MyReviews></PrivateRoute>
+        },
+        {
+          path: '/dashboard/addservice',
+          element: <PrivateRoute><AddService></AddService></PrivateRoute>
+        },
       ]
     }
   ])

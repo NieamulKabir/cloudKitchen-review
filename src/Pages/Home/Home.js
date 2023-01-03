@@ -1,6 +1,5 @@
 import React from 'react';
 import ServiceHome from '../Shared/ServiceComponent/ServiceHome';
-import Services from '../Shared/ServiceComponent/Services';
 import Banner from './Banner/Banner';
 import Popularity from './Popularity';
 
