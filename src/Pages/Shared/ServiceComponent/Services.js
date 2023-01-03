@@ -28,7 +28,7 @@ const Services = ({ datasize }) => {
     return (
         <div>
             <div className='text-center'>
-                <h1 className='text-4xl font-bold'>Our FooD Menu</h1>
+                <h1 className='mt-10 text-3xl md:text-5xl font-bold text-violet-600'>Our Food Menu</h1>
                 <p>Order Your Desire Food And enjoy it At home</p>
             </div>
             <div className='w-11/12 grid grid-cols-1 md:grid-cols-3 gap-10 mx-auto rounded-2xl pt-8 pb-16'>
