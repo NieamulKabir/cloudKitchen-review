@@ -126,7 +126,7 @@ const Header = () => {
                                             }>
 
                                             <div className='ml-5'>
-                                                <Link to='/login' className="bg-violet-600 w-36 px-4 py-[12px] font-semibold text-white rounded-xl"><span className='text-lg'>SIGN OUT</span></Link>
+                                                <Link to='/login' className="bg-violet-600 w-36 px-4 py-[8px] font-semibold text-white rounded-xl"><span className='text-sm'>SIGN OUT</span></Link>
 
                                             </div>
                                         </button>
@@ -186,8 +186,8 @@ const Header = () => {
                                 {
                                     user?.displayName &&
                                     <div className='flex justify-center items-center'>
-                                        <h3 className="text-sm font-semibold pr-2 ml-0 text-violet-700">Hi,{user?.displayName}  </h3>
-                                        <img className="rounded-3xl w-10" src={user?.photoURL} alt="" />
+                                        <h3 className="text-sm font-semibold pr-1 ml-0 text-violet-700">Hi,{user?.displayName}  </h3>
+                                        <img className="rounded-3xl w-8" src={user?.photoURL} alt="" />
                                     </div>
 
                                 }
@@ -206,7 +206,7 @@ const Header = () => {
 
                                             <div className='mx-auto mb-2'>
 
-                                                <Link to='/register' className="bg-violet-600 md:w-36 px-6 py-[12px] pb-4 font-semibold text-white rounded-xl"><span className='text-xs md:text-lg'>SIGN OUT</span></Link>
+                                                <Link to='/register' className="bg-violet-600 md:w-36 px-5 py-[6px] pb-4 font-semibold text-white rounded-xl"><span className='text-xs md:text-lg'>SIGN OUT</span></Link>
 
                                             </div>
                                         </button>
