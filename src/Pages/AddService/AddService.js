@@ -44,35 +44,35 @@ const AddService = () => {
     }
     return (
         <div className='max-w-screen-xl mx-auto '>
-            <h1 className='text-3xl font-bold text-center mt-6 mb-2'>Add New Food</h1>
-            <div className=' flex items-center justify-center w-[60%]'>
+            <h1 className='text-3xl font-bold text-center mt-6 mb-2 text-violet-600'>Add New Food</h1>
+            <div className='mx-auto flex items-center justify-center w-[60%]'>
 
                 <form className='w-full flex-col items-center' onSubmit={handleAddService}>
                     <div className="form-control w-full ">
                         <label className="label">
-                            <span className="label-text">Food Name</span>
+                            <span className="label-text text-lg font-semibold">Food Name</span>
                         </label>
                         <input name='foodname' type="text" placeholder="Type here" className="input input-bordered w-full " />
 
                         <label className="label">
-                            <span className="label-text">Price</span>
+                            <span className="label-text text-lg font-semibold">Price</span>
                         </label>
                         <input name='price' type="text" placeholder="Type here" className="input input-bordered w-full " />
 
                         <label className="label">
-                            <span className="label-text">Food Image Url</span>
+                            <span className="label-text text-lg font-semibold">Food Image Url</span>
                         </label>
                         <input name='img' type="text" placeholder="Type here" className="input input-bordered w-full" />
 
                         <label className="label">
-                            <span className="label-text">Food Details</span>
+                            <span className="label-text text-lg font-semibold">Food Details</span>
                         </label>
                         <input name='details' type="text" placeholder="Type here" className="input input-bordered w-full" />
 
 
 
                     </div>
-                    <button className='btn btn-primary my-3' type="submit">
+                    <button className='btn bg-violet-500 border-0 hover:bg-gray-300 hover:text-black my-3' type="submit">
                         Add New Service
                     </button>
                 </form>
