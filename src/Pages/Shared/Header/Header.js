@@ -68,17 +68,20 @@ const Header = () => {
                                 </NavLink>
                             </h1>
 
+                            {
+                                user?.uid &&
+                                <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn">
+                                    <NavLink to="/dashboard"
+                                        style={({ isActive }) =>
+                                            isActive ? activeStyle : undefined
+                                        }
+                                    >
+                                        <button className="py-3">DASHBOARD</button>
+                                    </NavLink>
+                                </h1>
+                            }
 
 
-                            <h1 className="btn font-bold hover:bg-rose-100   btn-ghost text-gray-800 rounded-btn">
-                                <NavLink to="/dashboard"
-                                    style={({ isActive }) =>
-                                        isActive ? activeStyle : undefined
-                                    }
-                                >
-                                    <button className="py-3">DASHBOARD</button>
-                                </NavLink>
-                            </h1>
 
 
 
@@ -168,16 +171,15 @@ const Header = () => {
 
 
 
-                            <li>
-                                <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/myreviews">
-                                    MyReviews
-                                </Link>
-                            </li>
-                            <li>
-                                <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/addservice">
-                                    AddItem
-                                </Link>
-                            </li>
+                            {
+                                user?.uid &&
+                                <li>
+                                    <Link className="btn hover:bg-slate-300 dark:hover:bg-slate-500 btn-ghost rounded-btn mx-3" to="/dashboard">
+                                        DASHBOARD
+                                    </Link>
+                                </li>
+                            }
+
 
 
                             <li className='py-2'>
@@ -223,8 +225,10 @@ const Header = () => {
 
                 </div>
 
-            </nav>
 
+            </nav>
+            <hr />
+           
         </div>
     );
 };
