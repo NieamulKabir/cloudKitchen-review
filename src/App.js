@@ -35,7 +35,7 @@ function App() {
         },
         {
           path: '/service/:id',
-          loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+          loader: ({ params }) => fetch(`https://cloudkitchen-v5ck.onrender.com/services/${params.id}`),
           element: <PrivateRoute><ServiceDetails></ServiceDetails></PrivateRoute>
         },
         {

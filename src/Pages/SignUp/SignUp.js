@@ -21,7 +21,7 @@ const SignUp = () => {
                 const currentUser = {
                     uid: user.uid
                 }
-                fetch(`http://localhost:5000/jwt`, {
+                fetch(`https://cloudkitchen-v5ck.onrender.com/jwt`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -51,7 +51,7 @@ const SignUp = () => {
                 const currentUser = {
                     uid: user.uid
                 }
-                fetch(`http://localhost:5000/jwt`, {
+                fetch(`https://cloudkitchen-v5ck.onrender.com/jwt`, {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'
@@ -84,33 +84,33 @@ const SignUp = () => {
         <div>
 
             <div className='bg-base-200'>
-                <h1 className="text-3xl md:text-5xl font-bold pb-0 pt-10 text-center">Sign Up</h1>
+                <h1 className="text-3xl md:text-5xl font-bold pb-0 pt-10 text-center text-violet-500">Sign Up</h1>
                 <div className="hero max-w-screen-xl mx-auto ">
 
                     <div className="hero-content w-full mx-auto">
 
-                        <div className="card w-[50%] shadow-2xl bg-base-100">
+                        <div className="card md:w-[50%] shadow-2xl bg-base-100">
                             <form onSubmit={handleSignUp} className="card-body pb-3">
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text">Name</span>
+                                        <span className="label-text text-lg text-semibold">Name</span>
                                     </label>
                                     <input type="text" name='name' placeholder="Name" className="input input-bordered " required />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text">Email</span>
+                                        <span className="label-text text-lg text-semibold">Email</span>
                                     </label>
                                     <input type="text" name='email' placeholder="Email" className="input input-bordered" />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text">Password</span>
+                                        <span className="label-text text-lg text-semibold">Password</span>
                                     </label>
                                     <input type="password" name='password' placeholder="password" className="input input-bordered" />
 
                                     <label className="label">
-                                        <h1>Have An Account ? <span className='text-violet-500 font-semibold'> <Link to='/login'>Click to Login</Link> </span> </h1>
+                                        <h1 className='text-lg text-semibold'>Have An Account ? <span className='text-violet-500 font-semibold'> <Link to='/login'>Click to Login</Link> </span> </h1>
                                     </label>
                                 </div>
                                 {/* {
@@ -118,7 +118,7 @@ const SignUp = () => {
                             } */}
 
                                 <div className="form-control mb-0">
-                                    <button className="btn btn-primary">Register</button>
+                                    <button className="btn bg-violet-500 border-0 w-[70%] mx-auto">Register</button>
                                 </div>
                             </form>
 
@@ -126,7 +126,7 @@ const SignUp = () => {
 
                             <button
                                 onClick={handleGoogleSignIn}
-                                className="btn w-[80%] mx-auto mb-10"><FaGoogle className='mr-2 text-2xl' >
+                                className="btn w-[62%] mx-auto bg-violet-500 border-0 mb-10"><FaGoogle className='mr-2 text-2xl' >
                                 </FaGoogle>Google Signin
                             </button>
 

@@ -10,7 +10,7 @@ const MyReviews = () => {
     const [reviewData, setReviewData] = useState([]);
 
     useEffect(() => {
-        const url = `http://localhost:5000/user-reviews/${user?.uid}`;
+        const url = `https://cloudkitchen-v5ck.onrender.com/user-reviews/${user?.uid}`;
         fetch(url, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('token')}`
@@ -36,7 +36,7 @@ const MyReviews = () => {
         return <Loading></Loading>
     }
     const handleDelete = id => {
-        fetch(`http://localhost:5000/reviews/${id}`, {
+        fetch(`https://cloudkitchen-v5ck.onrender.com/reviews/${id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

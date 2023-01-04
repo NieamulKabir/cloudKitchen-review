@@ -20,7 +20,7 @@ const AddService = () => {
             food_details
         }
         console.log(service);
-        fetch('http://localhost:5000/services', {
+        fetch('https://cloudkitchen-v5ck.onrender.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
